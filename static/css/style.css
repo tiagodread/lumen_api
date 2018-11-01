@@ -1,0 +1,47 @@
+form.form input.text, form.form textarea.standard, form.form select, form.form input.date {
+    background-color: #ffffff;
+    border: solid 1px #a9a9a9;
+    font-size: 13px;
+    color: #000000;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+form.form p label {
+    font-size: 14px;
+    color: #333333;
+    font-weight: normal;
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+form.form p.submit input {
+    background-color: #ffffff;
+    border: solid 1px #a9a9a9;
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-right: 25px;
+    padding-left: 25px;
+    -moz-border-radius: 0px;
+    -webkit-border-radius: 0px;
+    border-radius: 0px;
+}
+
+form.form p.submit {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+form.form p.required label, form.form span.required label {
+    font-weight: bold;
+}
+

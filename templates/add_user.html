@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Novo Usuário</title>
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<form action="/users/add" method="post">
+    <label for="name">Nome</label>
+    <input type="text" name="name" id="name">
+
+    <label for="email">E-mail</label>
+    <input type="email" name="email" id="email">
+
+    <label for="cpfe">CPF</label>
+    <input type="text" name="cpf" id="cpf">
+
+    <label for="phone">Celular</label>
+    <input type="tel" name="phone" id="phone">
+
+    <label for="password">Senha</label>
+    <input type="password" name="password" id="password">
+
+    <input type="submit">
+
+</form>
+
+<table border="1">
+    <tr>
+        <th>id</th>
+        <th>Nome</th>
+        <th>Email</th>
+        <th>CPF</th>
+        <th>Celular</th>
+    </tr>
+
+    {% for user in users %}
+        <tr>
+            <td>
+                {{ user.id }}
+            </td>
+            <td>
+                {{ user.name }}
+            </td>
+            <td>
+                {{ user.email }}
+            </td>
+            <td>
+                {{ user.cpf }}
+            </td>
+            <td>
+                {{ user.phone }}
+            </td>
+        </tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
