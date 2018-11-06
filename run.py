@@ -1,5 +1,5 @@
-from app import create_app
-from api.api import Api
+from src.app import create_app
+from src.api import Api
 
 if __name__ == '__main__':
     app = create_app()

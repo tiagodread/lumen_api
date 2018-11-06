@@ -1,4 +1,4 @@
-from models.users import User
+from src.models.users import User
 
 class Api(object):
     user = User()
